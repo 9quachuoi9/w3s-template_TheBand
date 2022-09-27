@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    Từ ngoài vào trong
+    từ trên xuống dưới 
+    từ tổng quan tới chi tiết
+*/
+/* 
+    Vị trí 
+    kích thước 
+    màu sắc
+    kiểu dang (kiểu chữ, tròn, vuông, ...)
+
+*/
+
+#main {}
+
+#header {
+    position: fixed;
+    top: 0%;
+    right: 0;
+    left: 0%;
+    height: 46.5px;
+    background-color: black;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
+
+}
+
+#nav li a {
+    display: block;
+    padding: 0 24px;
+    line-height: 46.5px;
+    text-decoration: none;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    background-color: gainsboro;
+    color: black;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    padding: 0 12px;
+    color: black;
+    line-height: 38.5px;
+    min-width: 160px;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer
+}
+
+#header .search-btn {
+    float: right;
+}
+
+#header .fa-solid.fa-magnifying-glass {
+    color: white;
+    line-height: 46.5px;
+    padding: 0 24px;
+}
+
+#slider {
+    margin-top: 46.5px;
+    height: 1000px;
+    background-color: purple;
+}
+
+
+#content {}
+
+#footer {}
