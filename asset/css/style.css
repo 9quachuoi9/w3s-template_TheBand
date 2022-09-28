@@ -30,6 +30,7 @@ html {
     left: 0%;
     height: 46.5px;
     background-color: black;
+    z-index: 1;
 }
 
 #nav {
@@ -68,6 +69,7 @@ html {
     position: absolute;
     background-color: white;
     list-style-type: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #nav li:hover .subnav {
@@ -97,11 +99,36 @@ html {
 }
 
 #slider {
+    position: relative;
     margin-top: 46.5px;
-    height: 1000px;
+    padding-top: 50%;
+    background: url(/asset/img/slider/slider1-slyer.jpg) top center / cover no-repeat;
 }
 
+#slider .text-content {
+    padding: 32px 16px;
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    text-align: center;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    
+}
+#slider .text-heading {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+#slider .text-description {
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
 
-#content {}
+#content {
+
+}
 
 #footer {}
