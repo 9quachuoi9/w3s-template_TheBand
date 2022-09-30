@@ -24,7 +24,7 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
 }
 
 .text-white {
-    color: white!important;
+    color: white !important;
 }
 
 #main {
@@ -110,8 +110,7 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     position: relative;
     margin-top: 46.5px;
     padding-top: 50%;
-    background: url(/asset/img/slider/la.jpg) top center / cover
-        no-repeat;
+    background: url(/asset/img/slider/la.jpg) top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -175,7 +174,6 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
 
 #content .members-list {
     margin-top: 48px;
-
 }
 
 #content .member-item {
@@ -186,7 +184,6 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
 
 #content .member-name {
     font-size: 15px;
-
 }
 
 #content .member-img {
@@ -246,7 +243,6 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     float: left;
     width: 33.33333%;
     padding: 0 8px;
-
 }
 
 .place-img {
@@ -258,7 +254,7 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     opacity: 0.6;
 }
 
-.place-body {   
+.place-body {
     padding: 16px;
     font-size: 15px;
     color: black;
