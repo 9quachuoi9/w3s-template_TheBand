@@ -290,5 +290,97 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     color: black;
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: white;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-header {
+    background: #009688;
+    height: 130px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.modal-heading-icon.fa-solid.fa-suitcase {
+    margin-right: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px;
+    color: white;
+    opacity: 0.8;
+}
+
+.modal-close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-lable {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.input-modal {
+    border: 1px solid gainsboro;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#buy-ticket {
+    border: none;
+    background: #009688;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    width: 100%;
+}
+
+#buy-ticket:hover {
+    opacity: 0.8;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196f3;
+}
+
 #footer {
 }
