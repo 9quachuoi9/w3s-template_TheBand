@@ -22,19 +22,19 @@
             <!-- Header -->
             <div id="header">
                 <ul id="nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Band</a></li>
-                    <li><a href="">Tour</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#band">Band</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             More
                             <i class="fa-solid fa-caret-down"></i>
                         </a>
                         <ul class="subnav">
-                            <li><a href="">Merchandise</a></li>
-                            <li><a href="">Extras</a></li>
-                            <li><a href="">Media</a></li>
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -56,7 +56,7 @@
             <!-- Content -->
             <div id="content">
                 <!-- about -->
-                <div class="content-section">
+                <div id="band" class="content-section">
                     <h2 class="section-heading">THE BAND</h2>
                     <p class="content-sub-heading">We love music</p>
                     <p class="about-text">
@@ -106,7 +106,7 @@
                     </div>
                 </div>
 
-                <div class="tour-section">
+                <div id="tour" class="tour-section">
                     <div class="content-section">
                         <h2 class="section-heading text-white">TOUR DATES</h2>
                         <p class="content-sub-heading text-white">
@@ -139,9 +139,7 @@
                                         Praesent tincidunt sed tellus ut rutrum
                                         sed vitae justo.
                                     </p>
-                                    <button
-                                        class="place-ticket-btn js-buy-ticket"
-                                    >
+                                    <button class="btn js-buy-ticket">
                                         Buy Tickets
                                     </button>
                                 </div>
@@ -159,9 +157,7 @@
                                         Praesent tincidunt sed tellus ut rutrum
                                         sed vitae justo.
                                     </p>
-                                    <button
-                                        class="place-ticket-btn js-buy-ticket"
-                                    >
+                                    <button class="btn js-buy-ticket">
                                         Buy Tickets
                                     </button>
                                 </div>
@@ -179,54 +175,98 @@
                                         Praesent tincidunt sed tellus ut rutrum
                                         sed vitae justo.
                                     </p>
-                                    <button
-                                        class="place-ticket-btn js-buy-ticket"
-                                    >
+                                    <button class="btn js-buy-ticket">
                                         Buy Tickets
                                     </button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <div class="content-section">
+                <!-- begin contact -->
+                <div id="contact" class="content-section">
                     <h2 class="section-heading">CONTACT</h2>
                     <p class="content-sub-heading">Fan? Drop a note!</p>
-                    
+
                     <div class="row contact-content">
                         <div class="column column-half contact-info">
-                            <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
-                            <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
-                            <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>Chicago,
+                                US
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i>Phone: +00
+                                151515
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i>Email:
+                                mail@mail.com
+                            </p>
                         </div>
-                        
+
                         <div class="column column-half contact-form">
                             <form action="">
                                 <div class="row">
                                     <div class="column column-half">
-                                        <input class="form-control" type="text" placeholder="Name" required>
+                                        <input
+                                            class="form-control"
+                                            type="text"
+                                            placeholder="Name"
+                                            required
+                                        />
                                     </div>
                                     <div class="column column-half">
-                                        <input class="form-control" type="email" placeholder="Email" required>
+                                        <input
+                                            class="form-control"
+                                            type="email"
+                                            placeholder="Email"
+                                            required
+                                        />
                                     </div>
                                 </div>
                                 <div class="row mt-8">
                                     <div class="column column-full">
-                                        <input class="form-control" type="text" placeholder="Message" required>
+                                        <input
+                                            class="form-control"
+                                            type="text"
+                                            placeholder="Message"
+                                            required
+                                        />
                                     </div>
                                 </div>
-                                
-                                <input class="form-submit-btn mt-16" type="submit" value="SEND">
+
+                                <input
+                                    class="btn full-right mt-16"
+                                    type="submit"
+                                    value="SEND"
+                                />
                             </form>
                         </div>
                     </div>
                 </div>
+                <!-- End contact -->
+
+                <!-- Begin map -->
+                <div class="map-section">
+                    <img src="/asset/img/map.jpg" alt="Map" />
+                </div>
+                <!-- End map -->
+
                 <!-- Footer -->
-                <div id="footer"></div>
+                <div id="footer">
+                    <div class="socials-list">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <p class="copyright">Powered by Be An Dang Iu</p>
+                </div>
             </div>
         </div>
-        
+
         <div class="modal js-modal">
             <div class="modal-container js-modal-container">
                 <div class="modal-close js-modal-close">
