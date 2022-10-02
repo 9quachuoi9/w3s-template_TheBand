@@ -19,6 +19,7 @@ màu sắc
 kiểu dang (kiểu chữ, tròn, vuông, ...)
 */
 
+/* class dung chung */
 .clear {
     clear: both;
 }
@@ -26,6 +27,50 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
 .text-white {
     color: white !important;
 }
+
+.text-center {
+    text-align: center !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* 3 cot tren mot hang */
+.column-third {
+    width: calc(100% / 3);
+}
+
+.column-half {
+    width: 50%;
+}
+
+.column-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+
+/* main */
 
 #main {
 }
@@ -176,12 +221,6 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     margin-top: 48px;
 }
 
-#content .member-item {
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
-}
-
 #content .member-name {
     font-size: 15px;
 }
@@ -236,13 +275,8 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
 /* Place */
 
 .place-list {
-    margin: 32px -8px 48px;
-}
-
-.place-item {
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px;
+    margin-top: 38px;
+    margin-bottom: 48px;
 }
 
 .place-img {
@@ -283,6 +317,8 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     display: inline-block;
     padding: 11px 16px;
     margin-top: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 .place-ticket-btn:hover {
@@ -290,6 +326,10 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     color: black;
 }
 
+/* -----------------------------Contact section */
+
+
+/* End of contact */
 .modal {
     position: fixed;
     top: 0;
@@ -312,6 +352,7 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
+    animation: modalFadeIn ease 0.5s;
 }
 
 .modal-header {
@@ -382,5 +423,58 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     color: #2196f3;
 }
 
+/* contact form */
+
+.contact-content {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.contact-info i[class*="fa-solid"] {
+    width: 30px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    color: white;
+    background-color: black;
+    padding: 11px 17px;
+    float: right;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-form .form-submit-btn:hover {
+    color: black;
+    background-color: gainsboro;
+}
+
+
 #footer {
+    height: 100px;
+    background-color: black;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    } 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
