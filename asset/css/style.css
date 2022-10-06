@@ -104,6 +104,7 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     height: 46.5px;
     background-color: black;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav {
@@ -111,8 +112,7 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
 }
 
 #nav > li {
-    display: block;
-    float: left;
+    display: inline-block;
 }
 
 #nav li {
@@ -161,14 +161,21 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
     cursor: pointer;
 }
 
+#header .menu-icon-btn,
 #header .search-btn {
     float: right;
+    padding: 0 21px;
 }
 
-#header .fa-solid.fa-magnifying-glass {
+#header .fa-solid.fa-magnifying-glass,
+#header .menu-icon-btn{
     color: white;
     line-height: 46.5px;
     padding: 0 24px;
+}
+
+#header .menu-icon-btn {
+    font-size: large;
 }
 
 /* slider----------------------------- */
@@ -207,13 +214,15 @@ kiểu dang (kiểu chữ, tròn, vuông, ...)
 #content {
 }
 
+/* add responsive */
 #content .content-section {
     width: 800px;
     max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
