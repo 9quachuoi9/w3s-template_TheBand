@@ -1,10 +1,10 @@
 /* PC */
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
 
 }
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
     .socials .fa-brands {
         font-size: 48px;
         margin: 0 8px;
@@ -13,7 +13,7 @@
 }
 
 /* Tablet & mobile */
-@media (max-width: 1023px) {
+@media (max-width: 63.9375em) {
     .btn {
         padding: 15px 16px;
     }
@@ -37,7 +37,7 @@
 }
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (max-width: 46.1875em) {
     .s-col-full,
     .s-full-width {
         width: 100% !important;
