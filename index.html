@@ -273,11 +273,15 @@
                 buyBtn.addEventListener('click', showBuyTicket);
             }
 
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') modal.classList.remove('open');
+            })
             modal.addEventListener('click', hideBuyTicket)
             modalClose.addEventListener('click', hideBuyTicket);
             modalContainer.addEventListener('click', function (event) {
                 event.stopPropagation()
             })
+
         </script>
     </body>
 </html>
